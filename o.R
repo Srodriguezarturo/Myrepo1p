@@ -5,3 +5,5 @@ print("hola mundo")
 library(slidify)
 library(ggplot2)
 
+library(slidify)
+author("mydeck")
