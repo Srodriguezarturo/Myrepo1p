@@ -5,4 +5,3 @@ print("hola mundo")
 library(slidify)
 library(ggplot2)
 
-#sebastian es demasiado gay 
