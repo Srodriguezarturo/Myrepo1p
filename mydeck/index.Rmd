@@ -13,7 +13,7 @@ knit        : slidify::knit2slides
 
 ## Tabla construida con lenguaje de marcadores 
 
-```{r echo=FALSE results='asis'}
+```{r echo=FALSE results='asis', echo=TRUE, FALSE results='asis', r echo=FALSE results='asis'}
 library(knitr)
 table<-kable(mtcars[1:15,],caption="A knirt kable.")
 table  
