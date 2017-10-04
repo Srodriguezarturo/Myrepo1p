@@ -34,7 +34,7 @@ qplot(wt, mpg, data = mtcars)
 ```
 ---
 
-## Gráfica con ggplot2
+##Gráfica con ggplot2
 ```{r}
 library(ggplot2)
 ggplot(mtcars, aes(mpg, wt)) +
