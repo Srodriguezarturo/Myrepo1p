@@ -17,15 +17,14 @@ knit        : slidify::knit2slides
 library(knitr)
 library(kableExtra)
 library(ggplot2)
-data("cars")
-kable(head(cars,5))
+data("mtcars")
+kable(head(mtcars,5))
 
 ```
-
-
---- .class #id 
-
-## Slide 2
-lenguaje de marcadores 
-
-
+## Gráfica o imagen estática  
+```{r, echo=FALSE}
+plot(mtcars)
+```
+```{r}
+summary(mtcars)
+```
