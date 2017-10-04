@@ -15,8 +15,8 @@ knit        : slidify::knit2slides
 
 ```{r echo=FALSE results='asis'}
 library(knitr)
-kable(mtcars[1:15,],caption="A knirt kable.")%>%  kable_styling()
-  
+table<-kable(mtcars[1:15,],caption="A knirt kable.")
+table  
 ```
 
 
