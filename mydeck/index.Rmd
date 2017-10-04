@@ -16,8 +16,10 @@ knit        : slidify::knit2slides
 ```{r, echo=FALSE, include=TRUE}
 library(knitr)
 library(kableExtra)
-a<-kable(mtcars[1:5,1:6],caption = "A knitr kable.")
-View(a)
+library(ggplot2)
+data("cars")
+kable(head(cars,5))
+
 ```
 
 
