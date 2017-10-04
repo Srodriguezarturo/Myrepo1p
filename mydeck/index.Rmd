@@ -13,7 +13,7 @@ knit        : slidify::knit2slides
 
 ## Tabla construida con lenguaje de marcadores 
 Librerias necesarias 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE}
 library(knitr)
 library(kableExtra)
 library(ggplot2)
@@ -35,3 +35,10 @@ qplot(wt, mpg, data = mtcars)
 ---
 
 ## Gráfica con ggplot2
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(mpg, wt)) +
+  geom_point(aes(colour=factor(cyl)))+
+  facet_grid(.~am)
+```
+
