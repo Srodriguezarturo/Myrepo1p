@@ -12,7 +12,9 @@ knit        : slidify::knit2slides
 ---
 
 ## Tabla construida con lenguaje de marcadores 
-Para la creación de este github se empleo la base de datos mtcars que esta incluida por defecto en data sets de r 
+Para la creación de este github se empleo la base de datos mtcars que esta incluida por defecto en data sets de r.
+
+
 Librerias necesarias 
 ```{r, echo=FALSE}
 library(knitr)
