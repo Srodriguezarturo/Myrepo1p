@@ -13,7 +13,7 @@ knit        : slidify::knit2slides
 
 ## Tabla construida con lenguaje de marcadores 
 
-```{r, echo=FALSE}
+```{r}
 library(knitr)
 library(kableExtra)
 dt <- mtcars[1:5, 1:6]
