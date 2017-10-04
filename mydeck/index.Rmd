@@ -42,4 +42,4 @@ ggplot(mtcars, aes(mpg, wt)) +
   facet_grid(.~am)
 
 ```
-
+---
