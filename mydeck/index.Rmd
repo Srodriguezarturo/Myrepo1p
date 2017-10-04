@@ -13,9 +13,9 @@ knit        : slidify::knit2slides
 
 ## Tabla construida con lenguaje de marcadores 
 
-```{r echo=FALSE results='asis' message=FALSE}
+```{r echo=FALSE results='asis'}
 library(knirt)
-kable(mtcars[1:15,],caption="A knirt kable.")
+kable(mtcars[1:5,],caption="A knirt kable.")
 ```
 
 
