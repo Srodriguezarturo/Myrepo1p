@@ -162,10 +162,13 @@ qplot(wt, mpg, data = mtcars)
 <pre><code class="r">library(ggplot2)
 ggplot(mtcars, aes(mpg, wt)) +
   geom_point(aes(colour=factor(cyl)))+
-  facet_grid(.~am)
+  facet_grid(,~am)
 </code></pre>
 
-<h2><img src="assets/fig/unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3"></h2>
+<pre><code>## Error in facet_grid(, ~am): el argumento &quot;facets&quot; está ausente, sin valor por omisión
+</code></pre>
+
+<hr>
 
   </article>
   <!-- Presenter Notes -->
