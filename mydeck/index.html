@@ -46,7 +46,9 @@
     <h2>Tabla construida con lenguaje de marcadores</h2>
   </hgroup>
   <article data-timings="">
-    <p>Librerias necesarias </p>
+    <p>Para la creación de este github se empleo la base de datos mtcars que esta incluida por defecto en data sets de r.</p>
+
+<p>Librerias necesarias </p>
 
 <p>Creación de la tabla</p>
 
@@ -151,25 +153,33 @@ kable(head(mtcars,5))
     <h2>Gráfica o imagen estática</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">require(ggplot2)
-qplot(wt, mpg, data = mtcars)
+    <pre><code class="r">require(graphics)
+coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 1)
 </code></pre>
 
-<h2><img src="assets/fig/simple-plot-1.png" title="plot of chunk simple-plot" alt="plot of chunk simple-plot" style="display: block; margin: auto;" /></h2>
+<p><img src="assets/fig/simple-plot-1.png" title="plot of chunk simple-plot" alt="plot of chunk simple-plot" style="display: block; margin: auto;" /></p>
 
-<h2>Gráfica con ggplot2</h2>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<pre><code class="r">library(ggplot2)
-ggplot(mtcars, aes(mpg, wt)) +
-  geom_point(aes(colour=factor(cyl)))+
-  facet_grid(,~am)
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Gráfica con ggplot2</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">ggplot(mtcars, aes(mpg, wt)) +geom_point(aes(colour=factor(cyl)))+facet_grid(.~am)
 </code></pre>
 
-<pre><code>## Error in facet_grid(, ~am): el argumento &quot;facets&quot; est� ausente, sin valor por omisi�n
-</code></pre>
+<p><img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" /></p>
 
-<hr>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
+<slide class="" id="slide-4" style="background:;">
+  <article data-timings="">
+    
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -188,6 +198,18 @@ ggplot(mtcars, aes(mpg, wt)) +
       <a href="#" target="_self" rel='tooltip' 
         data-slide=2 title='Gráfica o imagen estática'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Gráfica con ggplot2'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='NA'>
+         4
       </a>
     </li>
   </ul>
