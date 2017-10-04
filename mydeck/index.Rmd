@@ -13,7 +13,7 @@ knit        : slidify::knit2slides
 
 ## Tabla construida con lenguaje de marcadores 
 
-```{r, eval=TRUE}
+```{r echo=TRUE}
 library(knitr)
 library(kableExtra)
 kable(mtcars[1:5,1:6],caption = "A knitr kable.")
