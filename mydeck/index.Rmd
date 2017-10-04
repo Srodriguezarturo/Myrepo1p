@@ -16,12 +16,7 @@ knit        : slidify::knit2slides
 ```{r, echo=TRUE}
 library(knitr)
 library(kableExtra)
-dt <- mtcars[1:5, 1:6]
-options(knitr.table.format = "html") 
-kable(dt, "html")
-dt %>%
-  kable("html") %>%
-  kable_styling()
+kable(mtcars[1:5,1:6],caption = "A knitr kable.")
 ```
 
 
