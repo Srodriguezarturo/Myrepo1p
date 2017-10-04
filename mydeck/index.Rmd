@@ -16,8 +16,8 @@ knit        : slidify::knit2slides
 ```{r, echo=FALSE, include=TRUE}
 library(knitr)
 library(kableExtra)
-kable(mtcars[1:5,1:6],caption = "A knitr kable.")
-
+a<-kable(mtcars[1:5,1:6],caption = "A knitr kable.")
+View(a)
 ```
 
 
