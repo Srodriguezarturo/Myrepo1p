@@ -41,7 +41,7 @@ qplot(wt, mpg, data = mtcars)
 library(ggplot2)
 ggplot(mtcars, aes(mpg, wt)) +
   geom_point(aes(colour=factor(cyl)))+
-  facet_grid(.~am)
+  facet_grid(,~am)
 
 ```
 ---
