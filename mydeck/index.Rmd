@@ -26,27 +26,20 @@ kable(head(mtcars,5))
 
 ```
 
-
 ---
 ## Gráfica o imagen estática  
 ```{r, simple-plot, fig.height = 6, fig.align = 'center', message = F}
 require(ggplot2)
 qplot(wt, mpg, data = mtcars)
 ```
-$id
-[1] "simple-plot"
+ --- #montreal bg:url(http://goo.gl/cF6W2)
 
-$html
-[1] "<h2>A Simple Plot</h2>\n\n<p>Let us create a simple scatterplot.</p>\n\n<pre><code class=\"r\">require(ggplot2)\nqplot(wt, mpg, data = mtcars)\n</code></pre>\n\n<p><img src=\"figure/simple-plot.png\" alt=\"plot of chunk simple-plot\"> </p>\n"
+ ## Montreal by Night Time
 
-$header
-[1] "<h2>A Simple Plot</h2>"
+ --- #dillinger
 
-$level
-[1] "2"
+ <iframe src = 'http://dillinger.io' height='600px'></iframe>
 
-$title
-[1] "A Simple Plot"
+ --- .middle 
 
-$content
-[1] "<p>Let us create a simple scatterplot.</p>\n\n<pre><code class=\"r\">require(ggplot2)\nqplot(wt, mpg, data = mtcars)\n</code></pre>\n\n<p><img src=\"figure/simple-plot.png\" alt=\"plot of chunk simple-plot\"> </p>\n"
+ Slidify is Awesome
