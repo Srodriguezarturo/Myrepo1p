@@ -30,6 +30,7 @@ kable(head(mtcars,5))
 ```
 
 ---
+
 ## Gráfica o imagen estática  
 ```{r, simple-plot, fig.height = 6, fig.align = 'center', message = F}
 require(graphics)
@@ -37,9 +38,8 @@ pairs(mtcars, main = "mtcars data")
 coplot(mpg ~ disp | as.factor(cyl), data = mtcars,
        panel = panel.smooth, rows = 1)
 ```
+
 ---
-
-
 
 ## Gráfica con ggplot2
 ```{r}
