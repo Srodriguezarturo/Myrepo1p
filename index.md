@@ -17,6 +17,11 @@ Para la creación de este github se empleo la base de datos mtcars que esta incl
 
 Librerias necesarias 
 
+```r
+library(knitr)
+library(kableExtra)
+library(ggplot2)
+```
 Creación de la tabla
 
 ```r
@@ -49,7 +54,7 @@ coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 
 
 
 ## Imagen estática  
-![descripcion](imagen.png)
+![descripcion](http://www.hobbyconsolas.com/sites/hobbyconsolas.com/public/media/image/2016/12/juego-tronos_0.jpg)
 ---
 
 
