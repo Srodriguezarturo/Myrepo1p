@@ -165,10 +165,14 @@ coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Gráfica con ggplot2</h2>
+    <h2>imagen estática</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">ggplot(mtcars, aes(mpg, wt)) +geom_point(aes(colour=factor(cyl)))+facet_grid(.~am)
+    <h2><img src="imagen.png" alt="descripcion"></h2>
+
+<h2>Gráfica con ggplot2</h2>
+
+<pre><code class="r">ggplot(mtcars, aes(mpg, wt)) +geom_point(aes(colour=factor(cyl)))+facet_grid(.~am)
 </code></pre>
 
 <p><img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" /></p>
@@ -202,7 +206,7 @@ coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Gráfica con ggplot2'>
+        data-slide=3 title='imagen estática'>
          3
       </a>
     </li>

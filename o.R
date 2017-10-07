@@ -7,5 +7,4 @@ library(ggplot2)
 
 library(slidify)
 author("mydeck")
-a<-2+3 
-5^a 
+

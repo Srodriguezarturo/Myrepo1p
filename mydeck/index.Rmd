@@ -39,6 +39,13 @@ coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 
 
 ---
 
+
+## imagen estática  
+
+![descripcion](imagen.png)
+---
+
+
 ## Gráfica con ggplot2
 ```{r,fig.height = 6, fig.align = 'center', message = F}
 ggplot(mtcars, aes(mpg, wt)) +geom_point(aes(colour=factor(cyl)))+facet_grid(.~am)

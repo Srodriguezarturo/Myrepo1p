@@ -47,6 +47,13 @@ coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 
 
 ---
 
+
+## imagen estática  
+
+![descripcion](imagen.png)
+---
+
+
 ## Gráfica con ggplot2
 
 ```r
