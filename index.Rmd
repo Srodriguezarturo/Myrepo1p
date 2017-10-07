@@ -17,7 +17,6 @@ Para la creación de este github se empleo la base de datos mtcars que esta incl
 Librerias necesarias 
 ```{r, message=FALSE}
 library(knitr);library(kableExtra);library(ggplot2)
-
 ```
 Creación de la tabla
 ```{r}
