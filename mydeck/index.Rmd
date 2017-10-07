@@ -41,9 +41,7 @@ coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 
 
 
 ## Imagen estática  
-
-
-![descripcion](imagen.png)
+![descripcion](http://www.hobbyconsolas.com/sites/hobbyconsolas.com/public/media/image/2016/12/juego-tronos_0.jpg)
 ---
 
 
