@@ -48,7 +48,8 @@ coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 
 ---
 
 
-## imagen estática  
+## Imagen estática  
+
 
 ![descripcion](imagen.png)
 ---
