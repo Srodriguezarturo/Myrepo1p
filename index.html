@@ -46,8 +46,9 @@
     <h2>Tabla construida con lenguaje de marcadores</h2>
   </hgroup>
   <article data-timings="">
-    <p>Para la creación de este github se empleo la base de datos mtcars que esta incluida por defecto en data sets de r.
-Librerias necesarias </p>
+    <p>Para la creación de este github se empleo la base de datos mtcars que esta incluida por defecto en data sets de r.</p>
+
+<p>Librerias necesarias </p>
 
 <pre><code class="r">library(knitr);library(kableExtra);library(ggplot2)
 </code></pre>
@@ -55,7 +56,7 @@ Librerias necesarias </p>
 <p>Creación de la tabla</p>
 
 <pre><code class="r">data(&quot;mtcars&quot;)
-kable(head(mtcars,5))
+kable(head(mtcars,3))
 </code></pre>
 
 <table><thead>
@@ -115,34 +116,6 @@ kable(head(mtcars,5))
 <td align="right">1</td>
 <td align="right">4</td>
 <td align="right">1</td>
-</tr>
-<tr>
-<td align="left">Hornet 4 Drive</td>
-<td align="right">21.4</td>
-<td align="right">6</td>
-<td align="right">258</td>
-<td align="right">110</td>
-<td align="right">3.08</td>
-<td align="right">3.215</td>
-<td align="right">19.44</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td align="left">Hornet Sportabout</td>
-<td align="right">18.7</td>
-<td align="right">8</td>
-<td align="right">360</td>
-<td align="right">175</td>
-<td align="right">3.15</td>
-<td align="right">3.440</td>
-<td align="right">17.02</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="right">2</td>
 </tr>
 </tbody></table>
 
