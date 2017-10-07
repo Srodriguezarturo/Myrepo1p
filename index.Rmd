@@ -23,7 +23,6 @@ Creación de la tabla
 ```{r}
 data("mtcars")
 kable(head(mtcars,3))
-
 ```
 
 ---
