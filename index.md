@@ -16,38 +16,49 @@ Para la creación de este github se empleo la base de datos mtcars que esta incl
 
 
 Librerias necesarias 
-```{r, echo=FALSE}
-library(knitr)
-library(kableExtra)
-library(ggplot2)
 
-```
 Creación de la tabla
-```{r}
+
+```r
 data("mtcars")
 kable(head(mtcars,5))
-
 ```
+
+
+
+|                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
+|:-----------------|----:|---:|----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
+|Mazda RX4         | 21.0|   6|  160| 110| 3.90| 2.620| 16.46|  0|  1|    4|    4|
+|Mazda RX4 Wag     | 21.0|   6|  160| 110| 3.90| 2.875| 17.02|  0|  1|    4|    4|
+|Datsun 710        | 22.8|   4|  108|  93| 3.85| 2.320| 18.61|  1|  1|    4|    1|
+|Hornet 4 Drive    | 21.4|   6|  258| 110| 3.08| 3.215| 19.44|  1|  0|    3|    1|
+|Hornet Sportabout | 18.7|   8|  360| 175| 3.15| 3.440| 17.02|  0|  0|    3|    2|
 
 ---
 
 ## Gráfica o imagen estática  
-```{r, simple-plot, fig.height = 6, fig.align = 'center', message = F}
+
+```r
 require(graphics)
 coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 1)
 ```
+
+<img src="assets/fig/simple-plot-1.png" title="plot of chunk simple-plot" alt="plot of chunk simple-plot" style="display: block; margin: auto;" />
 
 ---
 
 
 ## Imagen estática  
-![descripcion](http://www.hobbyconsolas.com/sites/hobbyconsolas.com/public/media/image/2016/12/juego-tronos_0.jpg)
+![descripcion](imagen.png)
 ---
 
 
 ## Gráfica con ggplot2
-```{r,fig.height = 6, fig.align = 'center', message = F}
+
+```r
 ggplot(mtcars, aes(mpg, wt)) +geom_point(aes(colour=factor(cyl)))+facet_grid(.~am)
 ```
+
+<img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
 
 ---
