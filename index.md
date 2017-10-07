@@ -54,11 +54,16 @@ coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 
 
 
 ## Imagen estática  
-![descripcion](http://www.hobbyconsolas.com/sites/hobbyconsolas.com/public/media/image/2016/12/juego-tronos_0.jpg)
+![imagen](http://goo.gl/kcRF4e)      
+
+
+
 ---
 
 
+
 ## Gráfica con ggplot2
+
 
 ```r
 ggplot(mtcars, aes(mpg, wt)) +geom_point(aes(colour=factor(cyl)))+facet_grid(.~am)
